@@ -1,0 +1,114 @@
+/* ---------------------------
+   Container Shell
+---------------------------- */
+.auth-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    font-family: "Georgia", serif;
+    color: #f1f1f1;
+
+    background: linear-gradient(135deg, #0d1b2a, #3d62b5, #3d62b5);
+}
+
+/* ---------------------------
+   Tabs Navigation
+---------------------------- */
+.tabs {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+
+.tabs button {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-family: "Georgia", serif;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+    background: #94ace2;
+    color: #0d1b2a;
+    border-color: #94ace2;
+    font-weight: bold;
+}
+
+/* ---------------------------
+   Auth Form
+---------------------------- */
+.form {
+    display: grid;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 360px;
+
+    background: rgba(28, 37, 65, 0.85);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.form input {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #0d1b2a;
+    border-radius: 6px;
+    background: #0d1b2a;
+    color: #e0e0e0;
+    font-family: "Georgia", serif;
+}
+
+.form input::placeholder {
+    color: #7a869a;
+}
+
+.form input:focus {
+    border-color: #0d1b2a;
+    outline: none;
+    background: #0d1b2a;
+}
+
+/* Submit Button */
+.form button {
+    padding: 0.6rem 0.9rem;
+    border: none;
+    background: #7991ca;
+    color: #0d1b2a;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.form button:hover:not([disabled]) {
+    background: #fafafa;
+}
+
+.form button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ---------------------------
+   Message Box
+---------------------------- */
+.msg {
+    margin-top: 1rem;
+    max-width: 360px;
+    font-size: 0.9rem;
+    text-align: center;
+    word-wrap: break-word;
+    font-style: italic;
+    color: #d1d5db;
+}
